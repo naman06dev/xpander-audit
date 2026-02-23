@@ -370,13 +370,11 @@
         <section>
             <h2>Summary</h2>
 
-            <p>We audited all 153 pages of docs.xpander.ai and ran code examples against SDK v2.0.249 and CLI v0.0.69.</p>
+            <p>The biggest thing that came through in our audit is <strong>cohesion</strong> &mdash; or the lack of it. There's genuinely good content scattered across these 153 pages (the Self-Hosted deployment guide is excellent, the Workflows explainer does a great job of motivating the "why," the Build section has real UI walkthroughs with screenshots), but none of it connects into a single experience that someone can follow from start to finish. A developer, a PM using the Workbench, and a platform engineer all land on the same 26-card grid and have to figure out on their own what's relevant to them.</p>
 
-            <p>The product is real. Multi-framework support, a visual Workbench with UI walkthroughs, self-hosted K8s deployment, 50+ connectors, REST API responding in under 6 seconds. There's solid content in places &mdash; the Self-Hosted page, the Workflows explainer, the Build section's screenshots.</p>
+            <p>And then when a developer does find the getting started examples and tries to run them, the code crashes on the current SDK version. The terminology for the same concept changes between pages ("Cultural Knowledge" on one page becomes "Agent Memories" on another, and good luck searching for either). So even the content that exists in isolation doesn't hold together when someone tries to move through the docs as a whole.</p>
 
-            <p>The problem is <strong>cohesion</strong>. Everyone lands on the same 26-card grid with no routing. Terminology shifts between pages. The first code examples a developer will try crash on the current SDK version. It's a restructuring problem, not a rewrite.</p>
-
-            <p>The new landing page positions xpander around three products: <strong>AI Workflows</strong>, <strong>Personal AI</strong>, and <strong>AI Agents</strong>. The docs should mirror this. Below, we cover what's broken, what's working, and how we'd fix it &mdash; including a proposed information architecture around those three products.</p>
+            <p>The good news is this isn't a quality problem &mdash; it's a structure problem. The product underneath is solid (we verified: the CLI scaffolds working code, the REST API responds in under 6 seconds, multi-framework support across 7 frameworks actually works). The new landing page is already moving toward the right framing with three products: <strong>AI Workflows</strong>, <strong>Personal AI</strong>, and <strong>AI Agents</strong>. The docs just need to catch up to where the product already is, and this report lays out how we'd do that.</p>
 
             <div class="grade-display">
                 <div class="grade-circle yellow">
